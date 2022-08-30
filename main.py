@@ -233,7 +233,7 @@ class OPS:
 
 
 if __name__ == '__main__':
-  ops = OPS('2019303160','qwe147258')
+  ops = OPS('20193031xx','qwer1234')
   # ops.getDetailTask()
   ops.getUnSignTask()
   time.sleep(1)
