@@ -189,7 +189,7 @@ class OPS:
   
     def submitForm(self):
       # print(json.dumps(self.form))
-      self.submitData = self.form
+      self.submitData = self.submit_form
       self.submitApi = self.apis[2]
       extension = {
             "lon": self.lonlat['lon'],
@@ -233,14 +233,15 @@ class OPS:
 
 
 if __name__ == '__main__':
-  ops = OPS('20193031xx','qwer1234')
+  ops = OPS('2020303100','qwerasdf')
   # ops.getDetailTask()
   ops.getUnSignTask()
   time.sleep(1)
   ops.getDetailTask()
   ops.fillForm()
   time.sleep(1)
-  msg = ops.submit_form()
+  msg = ops.submitForm()
   print(msg)
+  print(msg.text)
   # msg = sign.submitForm()
   # print(msg)
